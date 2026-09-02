@@ -1,0 +1,41 @@
+{
+  "name": "genpark-agentic-zero-friction-checkout-voucher-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Agentic zero-friction checkout voucher minting cryptographic passkey-authorized tokens for instant headless ecommerce settlement.",
+  "author": "genpark",
+  "category": "headless-checkout",
+  "tags": [
+    "zero-click-checkout",
+    "agentic-voucher",
+    "passkey-auth",
+    "headless-ecommerce",
+    "instant-settlement"
+  ],
+  "inputs": {
+    "buyer_verified_identity": {
+      "type": "string"
+    },
+    "order_total_usd": {
+      "type": "number"
+    },
+    "shipping_address_hash": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "checkout_voucher_id": {
+      "type": "string"
+    },
+    "delegated_passkey_verified": {
+      "type": "boolean"
+    },
+    "zero_click_checkout_authorized": {
+      "type": "boolean"
+    },
+    "merchant_settlement_handoff_payload_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
